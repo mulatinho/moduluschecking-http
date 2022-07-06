@@ -12,6 +12,6 @@ RUN groupadd modulus -g 800 && \
 
 USER modulus
 RUN go mod download -x
-COPY data/*.txt /opt/go/pkg/mod/github.com/\!antoine\!augusti/moduluschecking\@v0.0.0-20191107190750-2d224b7bca8e/data/
+COPY data/*.txt /opt/go/src/github.com/AntoineAugusti/moduluschecking/data/
 
 CMD [ "go", "run", "main.go" ]
